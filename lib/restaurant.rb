@@ -7,12 +7,15 @@ class Restaurant
     @dishes = []
   end
 
-  def closing_time(closing_parameter)
-    if closing_parameter == 8
+  def closing_time(open_hours)
+    # I did this wrong because I did not fully read the directions and then spent the rest of my time on iteration 4. Sorry.
+    if open_hours == 8
       "18:00"
     else
       "23:00"
     end
+
+
   end
 
   def add_dish(dish)
@@ -36,8 +39,9 @@ class Restaurant
     capitalized_dishes
   end
 
-  def announce_closing_time(closing_number)
-  end
+  # def announce_closing_time(open_hours)
+  #   if open_hours == 5
+  # end
 
 
 
