@@ -23,11 +23,7 @@ class Restaurant
   end
 
   def open_for_lunch?
-    if opening_time.to_f < 12.0
-      true
-    else
-      false
-    end
+    opening_time.to_f < 12.0
   end
 
   def menu_dish_names
