@@ -8,15 +8,12 @@ class Restaurant
   end
 
   def closing_time(open_hours)
-    # I did this wrong because I did not fully read the directions and then spent the rest of my time on iteration 4. Sorry.
-    if open_hours == 8
-      "18:00"
-    else
-      "23:00"
-    end
-
-
+    closing_integer = opening_time.to_i + open_hours
+    closing_time = closing_integer.to_s + ":00"
   end
+
+
+
 
   def add_dish(dish)
     dishes << dish
